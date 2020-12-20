@@ -31,7 +31,7 @@ public class _040_GetLeastNumbers {
     /**
      * 堆
      * 时间复杂度：O(nlogk)
-     * 空间复杂度：O(n)
+     * 空间复杂度：O(k)
      * @param arr
      * @param k
      * @return
