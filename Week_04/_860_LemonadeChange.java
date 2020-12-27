@@ -1,6 +1,3 @@
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * @ClassName: _860_LemonadeChange
  * @Description: 860. 柠檬水找零
@@ -20,11 +17,20 @@ public class _860_LemonadeChange {
     public boolean lemonadeChange(int[] bills) {
         int five = 0, ten = 0;
         for (int i : bills) {
-            if (i == 5) five++;
-            else if (i == 10) {five--; ten++;}
-            else if (ten > 0) {ten--; five--;}
-            else five -= 3;
-            if (five < 0) return false;
+            if (i == 5) {
+                five++;
+            } else if (i == 10) {
+                five--;
+                ten++;
+            } else if (ten > 0) {
+                ten--;
+                five--;
+            } else {
+                five -= 3;
+            }
+            if (five < 0) {
+                return false;
+            }
         }
         return true;
     }
