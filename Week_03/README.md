@@ -1,5 +1,5 @@
 # 学习笔记
-##7、递归 Recursion
+## 7、递归 Recursion
 
 - 通过函数体来进行循环
 - Java代码模板
