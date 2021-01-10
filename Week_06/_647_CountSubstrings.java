@@ -5,7 +5,7 @@
  * @Date: 2021/01/03 18:43
  * @Version: 1.0.0
  **/
-public class _647_countSubstrings {
+public class _647_CountSubstrings {
 
     /**
      * 动态规划
