@@ -1,6 +1,6 @@
 /**
  * @ClassName: _063_uniquePathsWithObstacles
- * @Description: TODO
+ * @Description: 63. 不同路径 II
  * @Author: wangchangyong
  * @Date: 2021/1/4 17:57
  * @Version: 1.0.0
@@ -19,6 +19,7 @@ public class _063_UniquePathsWithObstacles {
         int m = obstacleGrid.length;
         int n = obstacleGrid[0].length;
 
+        // 第m行n列到达的路劲数
         int[][] dp = new int[m][n];
 
         // 第一行 遇到障碍物后，后边均不能到达
