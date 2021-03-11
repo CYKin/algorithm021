@@ -124,9 +124,7 @@ public class _146_LRUCache {
         }
 
         public DLinkedNode() {
-        }
-
-        ;
+        };
 
         public DLinkedNode(int key, int value) {
             this.key = key;
