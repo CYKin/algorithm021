@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.PriorityQueue;
 
 /**
@@ -20,6 +21,10 @@ public class TopK {
      * @return
      */
     public int topK(int[] arr, int k) {
+
+        HashMap hashMap = new HashMap();
+        hashMap.put("","");
+
         // 小顶堆
         PriorityQueue<Integer> queue = new PriorityQueue<>();
         Arrays.stream(arr).forEach(num -> {
