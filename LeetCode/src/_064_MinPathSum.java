@@ -17,7 +17,7 @@ public class _064_MinPathSum {
      */
     public int minPathSum(int[][] grid) {
         for (int m = 0; m < grid.length; m++) {
-            for (int n = 0; n < grid[0].length; m++) {
+            for (int n = 0; n < grid[0].length; n++) {
                 if (m == 0 && n != 0) {
                     grid[m][n] = grid[m][n] + grid[m][n - 1];
                 } else if (m != 0 && n == 0) {
